@@ -5,9 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class MkworksApiApplication {
-
-	public static void main(String[] args) {
-		SpringApplication.run(MkworksApiApplication.class, args);
-	}
-
+    public static void main(String[] args) {
+        SpringApplication.run(MkworksApiApplication.class, args);
+    }
 }

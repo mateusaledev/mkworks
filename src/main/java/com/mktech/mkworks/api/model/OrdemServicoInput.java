@@ -1,44 +1,43 @@
 package com.mktech.mkworks.api.model;
 
-import java.math.BigDecimal;
-
 import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
+import java.math.BigDecimal;
 
 public class OrdemServicoInput {
 
-	@NotBlank
-	private String descricao;
-	
-	@NotNull
-	private BigDecimal preco;
-	
-	@Valid
-	@NotNull
-	private ClienteIdInput cliente;
+    @NotBlank
+    private String descricao;
 
-	public String getDescricao() {
-		return descricao;
-	}
+    @NotNull
+    private BigDecimal preco;
 
-	public void setDescricao(String descricao) {
-		this.descricao = descricao;
-	}
+    @Valid
+    @NotNull
+    private ClienteIdInput cliente;
 
-	public BigDecimal getPreco() {
-		return preco;
-	}
+    public String getDescricao() {
+        return descricao;
+    }
 
-	public void setPreco(BigDecimal preco) {
-		this.preco = preco;
-	}
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
 
-	public ClienteIdInput getCliente() {
-		return cliente;
-	}
+    public BigDecimal getPreco() {
+        return preco;
+    }
 
-	public void setCliente(ClienteIdInput cliente) {
-		this.cliente = cliente;
-	}
+    public void setPreco(BigDecimal preco) {
+        this.preco = preco;
+    }
+
+    public ClienteIdInput getCliente() {
+        return cliente;
+    }
+
+    public void setCliente(ClienteIdInput cliente) {
+        this.cliente = cliente;
+    }
 }
